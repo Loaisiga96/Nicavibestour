@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Nicavibestour/static/css/main.5b10e4b0.css",
-    "main.js": "/Nicavibestour/static/js/main.e506d4f6.js",
+    "main.js": "/Nicavibestour/static/js/main.81c835ed.js",
     "static/js/488.955d6469.chunk.js": "/Nicavibestour/static/js/488.955d6469.chunk.js",
     "static/media/logo.png": "/Nicavibestour/static/media/logo.e6c158389ad81d959570.png",
     "index.html": "/Nicavibestour/index.html",
     "main.5b10e4b0.css.map": "/Nicavibestour/static/css/main.5b10e4b0.css.map",
-    "main.e506d4f6.js.map": "/Nicavibestour/static/js/main.e506d4f6.js.map",
+    "main.81c835ed.js.map": "/Nicavibestour/static/js/main.81c835ed.js.map",
     "488.955d6469.chunk.js.map": "/Nicavibestour/static/js/488.955d6469.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b10e4b0.css",
-    "static/js/main.e506d4f6.js"
+    "static/js/main.81c835ed.js"
   ]
 }
