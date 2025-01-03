@@ -1,0 +1,343 @@
+.home-container {
+  position: relative;
+}
+
+.welcome-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para la nueva sección */
+.design-holiday-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(22, 156, 65); /* Verde elegante */
+  color: white;
+  padding: 40px 20px;
+  flex-direction: row; /* Asegura que los elementos estén en una fila */
+  gap: 20px; /* Reduce el espacio entre el título y el botón */
+}
+
+.design-holiday-section h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para efecto 3D */
+}
+
+.contact-button {
+  background-color: rgb(243, 247, 8);
+  color: #000000;
+  padding: 12px 25px; /* Ajusta el tamaño del botón */
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+  background-color: #1cf4d7; /* Más oscuro en hover */
+  color: white;
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.contact-button:focus {
+  outline: none; /* Elimina el borde predeterminado en el foco */
+  box-shadow: 0 0 5px #f8f8f8; /* Sombra para enfoque */
+}
+
+
+/* Sección de Testimonios */
+.testimonials-section {
+  padding: 10px 20px;
+  background-color: #e0e7e0; /* Color más suave para el fondo */
+}
+
+/* Centrar el título de la sección de testimonios */
+.testimonials-section h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4f73b2;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto destacado */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* Contenedor para el video y texto */
+.testimonial-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Más espacio entre el video y el texto */
+  flex-wrap: wrap; /* En pantallas pequeñas se ajusta a una sola columna */
+}
+
+/* Estilo del contenedor del video */
+.testimonial-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px; /* Reduce el tamaño máximo del video */
+  height: 0;
+  padding-bottom: 35%; /* Relación 16:9 */
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.testimonial-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+
+/* Estilo del texto de los testimonios */
+.testimonial-text {
+  font-size: 1.4rem;
+  max-width: 550px;
+  color: #444;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: left;
+  background-color: #ffffff; /* Fondo blanco para destacar el texto */
+  border-radius: 8px; /* Bordes redondeados para un estilo más amigable */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+}
+
+.testimonial-text p {
+  font-style: italic; /* Para resaltar las citas */
+  margin-bottom: 10px;
+  color: #666; /* Color suave para la cita */
+}
+
+.testimonial-text .customer-name {
+  font-weight: 600; /* Nombre del cliente en negrita */
+  color: #333; /* Color oscuro para resaltar el nombre */
+  font-size: 1.3rem; /* Tamaño ligeramente mayor para el nombre */
+}
+
+/* Estilos para passsion-for-travel-section */
+.who-we-are-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 10px; /* Controla el espacio entre el título y la descripción */
+}
+
+.who-we-are-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #4f73b2;
+  text-align: right; /* Alinea el texto a la derecha */
+  display: flex;
+  flex-direction: column; /* Coloca cada palabra en una línea */
+  margin: 0; /* Elimina el margen para evitar espacio extra */
+  text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para efecto 3D */
+}
+
+.who-we-are-text {
+  flex: 1;
+  font-size: 1.7rem;
+  color: #555;
+  max-width: 600px;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0; /* Elimina el margen */
+}
+
+/* Estilos para el contenedor de imágenes en bucle */
+.passion-for-travel-section {
+  padding: 60px 20px;
+  background-color: #f0f8ff; /* Un color claro y fresco */
+  text-align: center;
+}
+
+.passion-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4f73b2;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto destacado */
+  margin-bottom: 20px;
+}
+
+.passion-for-travel-section p {
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Estilo del contenedor de imágenes */
+.image-slider {
+  display: flex;
+  overflow: hidden;
+  width: 60%;
+  position: relative;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilo de las imágenes */
+.image-slider img {
+  width: 25%; /* Asegura que cada imagen ocupe el 25% del contenedor */
+  height: auto;
+  object-fit: cover;
+  margin: 5px; /* Elimina cualquier espacio entre las imágenes */
+  animation: slide 60s infinite linear; /* Animación en bucle */
+}
+
+/* Animación de desplazamiento de las imágenes */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  4.545% {
+    transform: translateX(-100%);
+  }
+  9.09% {
+    transform: translateX(-200%);
+  }
+  13.635% {
+    transform: translateX(-300%);
+  }
+  18.18% {
+    transform: translateX(-400%);
+  }
+  22.725% {
+    transform: translateX(-500%);
+  }
+  27.27% {
+    transform: translateX(-600%);
+  }
+  31.815% {
+    transform: translateX(-700%);
+  }
+  36.36% {
+    transform: translateX(-800%);
+  }
+  40.905% {
+    transform: translateX(-900%);
+  }
+  45.45% {
+    transform: translateX(-1000%);
+  }
+  49.995% {
+    transform: translateX(-1100%);
+  }
+  54.54% {
+    transform: translateX(-1200%);
+  }
+  59.085% {
+    transform: translateX(-1300%);
+  }
+  63.63% {
+    transform: translateX(-1400%);
+  }
+  68.175% {
+    transform: translateX(-1500%);
+  }
+  72.72% {
+    transform: translateX(-1600%);
+  }
+  77.265% {
+    transform: translateX(-1700%);
+  }
+  81.81% {
+    transform: translateX(-1800%);
+  }
+  86.355% {
+    transform: translateX(-1900%);
+  }
+  90.9% {
+    transform: translateX(-2000%);
+  }
+  95.445% {
+    transform: translateX(-2100%);
+  }
+  100% {
+    transform: translateX(-2200%);
+  }
+}
+
+/* Estilos para la sección de socios estelares */
+.stellar-partners-section {
+  padding: 40px 20px;
+  background-color: #e0e7e0; /* Fondo claro */
+  text-align: center;
+  border-top: 1px solid #ccc; /* Separador superior */
+}
+
+.partners-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4f73b2;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto destacado */
+  margin-bottom: 40px;
+}
+
+.partners-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.partners-content img {
+  width: 170px; /* Ajuste de tamaño */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partners-content img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}

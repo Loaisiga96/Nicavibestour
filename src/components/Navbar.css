@@ -1,0 +1,150 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Alinea todo a la izquierda */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fbfbfb; /* Ajusta el color de fondo según lo necesites */
+}
+
+.logo-container {
+  margin-right: 20px; /* Asegura que el logo tenga algo de espacio con los enlaces */
+}
+
+.logo {
+  height: 80px; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-start; /* Alinea los enlaces a la izquierda */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 20px; /* Espaciado entre los enlaces */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(2, 61, 199); /* Color de los enlaces, azul como Home */
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: bold; /* Esto pone el texto en negrita */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Estilo para Destinations: Aplica el mismo estilo que los demás enlaces */
+.nav-links a.destinations {
+  color: rgb(2, 61, 199); /* Azul para Destinations */
+}
+
+/* Estilos para hover en todos los enlaces */
+.nav-links a:hover,
+.dropdown-link:hover { /* Aplica a Destinations también */
+  background-color: #f8c36e; /* Fondo naranja al pasar el mouse */
+  color: white; /* Cambia el color del texto a blanco */
+  box-shadow: 0 4px 10px rgba(228, 193, 138, 0.5); /* Sombra atractiva */
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none; /* Oculta el menú por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none; /* Elimina subrayados */
+  display: inline-block;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555; /* Fondo al pasar el mouse */
+  color: #f39c12; /* Cambia el color del texto */
+}
+
+/* Estilos para el enlace de Destinations y la flecha */
+.dropdown-link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(2, 61, 199); /* Igual que los demás enlaces */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px; /* Igual que los demás enlaces */
+  text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* Alinea los íconos a la izquierda */
+  gap: 15px; /* Espacio entre los íconos */
+  padding: 10px; /* Espacio interno para dar margen */
+}
+
+.social-icons a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: rgb(2, 61, 199); /* Color de los íconos */
+  font-size: 24px; /* Tamaño adecuado para los íconos */
+  border-radius: 50%; /* Bordes completamente redondeados */
+  padding: 10px;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+.social-icons a:hover {
+  color: white; /* Cambia el color del ícono */
+  background-color: #f39c12; /* Fondo naranja al pasar el mouse */
+  box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5); /* Sombra atractiva */
+}
+
+/* Estilos para el botón de contacto */
+.contact-button {
+  background-color: #12f34a; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 12px 30px; /* Espaciado para hacerlo más grande y elegante */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  font-weight: 600; /* Peso de la fuente ligeramente más liviano para un aspecto elegante */
+  text-decoration: none; /* Elimina el subrayado */
+  display: flex;
+  align-items: center; /* Centra el texto dentro del botón */
+  justify-content: center;
+  gap: 8px; /* Espaciado entre el texto y el ícono */
+  font-size: 16px; /* Tamaño adecuado para el texto */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  box-shadow: 0 6px 15px rgba(18, 243, 74, 0.3); /* Sombra suave */
+  cursor: pointer; /* Aparece como un botón clickeable */
+}
+
+.contact-button:hover {
+  background-color: #0fb325; /* Cambio de color al pasar el mouse */
+  transform: translateY(-3px); /* Eleva ligeramente el botón al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(18, 243, 74, 0.4); /* Sombra más pronunciada */
+}

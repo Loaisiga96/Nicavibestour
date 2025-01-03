@@ -1,0 +1,102 @@
+/* Contenedor principal */
+.tour-container {
+  padding: 20px;
+}
+
+/* Contenido del tour */
+.tour-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Columna del video */
+.video-column {
+  flex: 1;
+  /* Estilo para contener el video */
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Reduce el tamaño máximo del video */
+  height: 0;
+  padding-bottom: 35%; /* Relación 16:9 */
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Estilo del iframe (video) */
+.video-column iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Elimina el borde del iframe */
+}
+
+/* Columna de la descripción */
+.description-column {
+  flex: 1;
+}
+
+/* Estilo del título con efecto */
+.description-column h3 {
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  color: #0d503c; /* Rojo vibrante, asociado con la energía y la emoción */
+  margin-bottom: 20px;
+  font-weight: 700; /* Negrita */
+  text-transform: uppercase; /* Letras en mayúsculas */
+  letter-spacing: 3px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  animation: fadeIn 1.5s ease-out, shadowPulse 2s infinite alternate; /* Efectos de animación */
+}
+
+/* Efecto de sombra que "pulsa" */
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px #e74c3c;
+  }
+  50% {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 35px #e74c3c;
+  }
+  100% {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 25px #e74c3c;
+  }
+}
+
+/* Efecto de desvanecimiento */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos de la galería */
+.gallery-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Oculta el contenido fuera de los límites */
+}
+
+.gallery {
+  display: flex;
+  width: 80%;
+  position: relative;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.gallery img {
+  width: 25%; /* Asegura que cada imagen ocupe el 15% del contenedor */
+  height: auto;
+  object-fit: cover;
+  margin: 5px; /* Elimina cualquier espacio entre las imágenes */
+  transition: transform 0.3s ease-in-out; /* Transición suave para el zoom */
+}
+
+/* Efecto de zoom al pasar el mouse */
+.gallery img:hover {
+  transform: scale(1.5); /* Escala la imagen al 120% */
+}
