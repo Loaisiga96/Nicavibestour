@@ -1,0 +1,77 @@
+.other-services-container {
+  padding: 80px 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; /* Fondo suave para que resalte el contenido */
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50; /* Color más oscuro para mejorar la legibilidad */
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Asegura una distribución de dos columnas */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: #97e5e7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Efecto de elevación al pasar el cursor */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más profunda en hover */
+}
+
+.service-item h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .services-list {
+    grid-template-columns: 1fr 1fr; /* Asegura dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título en pantallas muy pequeñas */
+  }
+
+  .service-item {
+    padding: 20px;
+  }
+
+  .service-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-item p {
+    font-size: 1rem;
+  }
+}

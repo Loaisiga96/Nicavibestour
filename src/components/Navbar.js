@@ -41,7 +41,7 @@ const Navbar = () => {
         <li><Link to="/other-services">Other Services</Link></li>
       </ul>
 
-      {/* Contenedor para los iconos de redes sociales y el botón de contacto */}
+      {/* Contenedor para los iconos de redes sociales */}
       <div className="social-icons">
         <a href="https://www.facebook.com/profile.php?id=61564990773701&locale=es_LA" target="_blank" rel="noopener noreferrer">
           <FaFacebook size={24} />
@@ -58,8 +58,10 @@ const Navbar = () => {
         <a href="https://www.youtube.com/@NicaVibesTours" target="_blank" rel="noopener noreferrer">
           <FaYoutube size={24} />
         </a>
+      </div>
 
-        {/* Botón de Contact Now vinculado a WhatsApp con el ícono */}
+      {/* Botón de Contact Now vinculado a WhatsApp */}
+      <div className="contact-button-container">
         <a href="https://wa.me/50586818703?text=Hello,%20I'm%20interested%20in%20NicaVibes%20Tours!" className="contact-button">
           <FaWhatsapp size={20} /> {/* Ícono de WhatsApp */}
           CONTACT NOW

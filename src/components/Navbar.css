@@ -1,4 +1,4 @@
-/* Estilos para la barra de navegación */
+/* Estilos generales para la barra de navegación */
 .navbar {
   display: flex;
   justify-content: flex-start; /* Alinea todo a la izquierda */
@@ -15,6 +15,7 @@
   height: 80px; /* Ajusta el tamaño del logo según lo necesites */
 }
 
+/* Estilos para los enlaces de navegación */
 .nav-links {
   display: flex;
   justify-content: flex-start; /* Alinea los enlaces a la izquierda */
@@ -121,30 +122,29 @@
 
 .social-icons a:hover {
   color: white; /* Cambia el color del ícono */
-  background-color: #f39c12; /* Fondo naranja al pasar el mouse */
+  background-color: #9ca522; /* Fondo naranja al pasar el mouse */
   box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5); /* Sombra atractiva */
 }
 
-/* Estilos para el botón de contacto */
+/* Estilo para el botón de contacto */
 .contact-button {
-  background-color: #12f34a; /* Color de fondo */
-  color: white; /* Color del texto */
-  padding: 12px 30px; /* Espaciado para hacerlo más grande y elegante */
-  border-radius: 5px; /* Bordes ligeramente redondeados */
-  font-weight: 600; /* Peso de la fuente ligeramente más liviano para un aspecto elegante */
-  text-decoration: none; /* Elimina el subrayado */
   display: flex;
-  align-items: center; /* Centra el texto dentro del botón */
-  justify-content: center;
-  gap: 8px; /* Espaciado entre el texto y el ícono */
-  font-size: 16px; /* Tamaño adecuado para el texto */
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-  box-shadow: 0 6px 15px rgba(18, 243, 74, 0.3); /* Sombra suave */
-  cursor: pointer; /* Aparece como un botón clickeable */
+  align-items: center;
+  background-color: #25d3bc; /* Color de fondo de WhatsApp */
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+  margin-left: 20px; /* Espacio entre los íconos y el botón */
 }
 
 .contact-button:hover {
-  background-color: #0fb325; /* Cambio de color al pasar el mouse */
-  transform: translateY(-3px); /* Eleva ligeramente el botón al pasar el mouse */
-  box-shadow: 0 10px 20px rgba(18, 243, 74, 0.4); /* Sombra más pronunciada */
+  background-color: #e27108; /* Color de fondo cuando se pasa el mouse */
+  box-shadow: 0 4px 10px rgba(1, 208, 245, 0.5); /* Sombra suave */
+}
+
+.contact-button svg {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
 }

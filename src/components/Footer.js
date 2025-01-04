@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-content">
         <img src={logo} alt="NicaVibes Tours Logo" className="footer-logo" />
-        <p>&copy; {new Date().getFullYear()} NicaVibes Tours. Embark on an unforgettable adventure.</p>
+        <p>&copy; {new Date().getFullYear()} NicaVibes Tours. Relax - Live - Travel.</p>
         <div className="social-links">
           <a href="https://www.facebook.com/profile.php?id=61564990773701&locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook">
             <FaFacebook size={30} />

@@ -46,7 +46,7 @@ const Home = () => {
           onClick={() => window.open('https://wa.me/50586818703?text=Hello,%20I\'m%20interested%20in%20NicaVibes%20Tours!', '_blank')}
           aria-label="Contact NicaVibes Tours Team via WhatsApp"
         >
-          Get in Touch
+          GET IN TOUCH NOW
         </button>
       </section>
 
@@ -58,7 +58,7 @@ const Home = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/jjlZwIg6geM?rel=0"
+              src="https://www.youtube.com/embed/AwIth9RRixk?si=RovSFNYbZEYYADss"
               title="Client Testimonial Video"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -67,7 +67,7 @@ const Home = () => {
           </div>
           <div className="testimonial-text">
             <p>
-              Watch what our clients have to say about their experience with NicaVibes Tours. Discover how we create unforgettable adventures in Nicaragua.
+            Hear What Our Clients Are Saying: Real Stories of Excitement and Adventure with NicaVibes Tours!
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ const Home = () => {
           At NicaVibes Tours, we don’t just offer tours—we offer experiences that stay with you forever. Our passion is to help you discover the heart and soul of Nicaragua, from the towering volcanoes to the sparkling beaches, from the jungles to the vibrant cities. Every journey is a chance to create memories, build connections, and explore new horizons.
         </p>
         <div className="image-slider">
-          {Array.from({ length: 22 }, (_, index) => (
+          {Array.from({ length: 28 }, (_, index) => (
             <img
               key={index}
               src={`${process.env.PUBLIC_URL}/images/passion${index + 1}.jpg`}

@@ -31,9 +31,10 @@
   border-radius: 10px;
 }
 
-.content h1 {
+.content h1 {       /* Cambia el tamaño de la fuente*/
   font-size: 3rem;
   margin: 10px 0;
+  color: white;
 }
 
 .content p {
@@ -62,30 +63,6 @@
   margin: 0;
   text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para efecto 3D */
 }
-
-.contact-button {
-  background-color: rgb(243, 247, 8);
-  color: #000000;
-  padding: 12px 25px; /* Ajusta el tamaño del botón */
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-button:hover {
-  background-color: #1cf4d7; /* Más oscuro en hover */
-  color: white;
-  transform: translateY(-2px); /* Efecto de elevación */
-}
-
-.contact-button:focus {
-  outline: none; /* Elimina el borde predeterminado en el foco */
-  box-shadow: 0 0 5px #f8f8f8; /* Sombra para enfoque */
-}
-
 
 /* Sección de Testimonios */
 .testimonials-section {
@@ -297,12 +274,6 @@
   }
   90.9% {
     transform: translateX(-2000%);
-  }
-  95.445% {
-    transform: translateX(-2100%);
-  }
-  100% {
-    transform: translateX(-2200%);
   }
 }
 
