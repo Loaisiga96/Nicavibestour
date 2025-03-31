@@ -1,0 +1,158 @@
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Alinea todo a la izquierda */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fbfbfb;
+}
+
+.logo-container {
+  margin-right: 20px; /* Asegura que el logo tenga algo de espacio con los enlaces */
+}
+
+.logo {
+  height: 80px; /* Ajusta el tamaño del logo según lo necesites */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Asegura que el menú se ajuste en pantallas pequeñas */
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(2, 61, 199); /* Color de los enlaces */
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover en enlaces */
+.nav-links a:hover {
+  background-color: #f8c36e;
+  color: white;
+}
+
+/* Estilos para el dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  border-radius: 5px;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: rgb(49, 45, 45);
+}
+
+/* Asegura que el dropdown funcione en dispositivos móviles */
+.dropdown-link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo para el enlace de Destinations y la flecha */
+.dropdown-link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(2, 61, 199); /* Azul para Destinations */
+  font-size: 16px;
+  font-weight: bold; /* Negrita, como el resto de los enlaces */
+  padding: 10px 15px; /* Igual que los demás enlaces */
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para hover en el enlace de Destinations */
+.dropdown-link:hover {
+  background-color: #f8c36e; /* Fondo naranja al pasar el mouse */
+  color: white; /* Cambia el color del texto a blanco */
+  box-shadow: 0 4px 10px rgba(228, 193, 138, 0.5); /* Sombra atractiva */
+}
+
+/* Estilos para el menú de Destinations */
+.dropdown-menu li a {
+  color: rgb(49, 45, 45); /* Color de los enlaces en el dropdown */
+  text-decoration: none; /* Elimina subrayado */
+  display: inline-block;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555; /* Fondo al pasar el mouse */
+  color: #f39c12; /* Cambia el color del texto */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.social-icons a {
+  color: rgb(2, 61, 199);
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: white;
+  background-color: #9ca522;
+}
+
+/* Estilo para el botón de contacto */
+.contact-button {
+  display: flex;
+  align-items: center;
+  background-color: #25d3bc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #f3f3f3;
+  }
+}
